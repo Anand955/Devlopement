@@ -73,9 +73,5 @@ router.patch("/:id", async (req, res) => {
     }
 });
 
-<<<<<<< HEAD
-module.exports = router; // Export the router//
+module.exports = router;
  
-=======
-module.exports = router; // Export the router
->>>>>>> 8edb12068dcf3bc61e4699c9f51309be36aeb520
