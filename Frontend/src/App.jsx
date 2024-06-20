@@ -1,12 +1,12 @@
 import React from 'react'
+import Navbar from './Components/Navbar'
 
 const App = () => {
   return (
     <div>
-      Anand Dagar
+      <Navbar/>
     </div>
   )
 }
 
 export default App
-dgkjrthjitj
