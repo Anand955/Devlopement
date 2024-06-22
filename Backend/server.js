@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const userRoutes = require('./Router/UserRoutes'); // Import the user routes
 
 dotenv.config();
+const cors = require('cors')
 
 const app = express();
 
