@@ -2,11 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const userRoutes = require('./Router/UserRoutes'); // Import the user routes
-
-dotenv.config();
-const cors = require('cors')
-
 const app = express();
+dotenv.config();
+const cors = require('cors'); 
+app.use(cors({
+  }));
+
+
 
 // Middleware to parse JSON request bodies
 app.use(express.json());

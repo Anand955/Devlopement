@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Create = () => {
     const [name, setName] = useState("");
@@ -6,6 +7,8 @@ const Create = () => {
     const [age, setAge] = useState(0);
 
     const [error, setError] = useState("")
+
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();  // Prevent default form submission
@@ -35,7 +38,7 @@ const Create = () => {
                  setName("");
                  setEmail("");
                  setAge(0);
-
+                 navigate("/read")
                
             } 
 
